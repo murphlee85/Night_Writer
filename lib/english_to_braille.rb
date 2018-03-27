@@ -1,17 +1,28 @@
 require 'pry'
-# def english_to_braille("string")
-#   # "take english string
-#   # change it to characters
-#   # iterate through characters
-#   # print first array
-#   # return line
-#   # print second array
-#   # return line
-#   # print third array
-#   # return line"
-# end
-#
-# def method("string")
+
+
+#iterate through text
+
+#break it into 80 character segments including spaces
+
+
+
+# take english string
+
+# change it to characters
+
+
+
+# iterate through characters
+# print first array
+# return line
+# print second array
+# return line
+# print third array
+# return line"
+
+
+
 lowercase_alphabet = {
   " " => ['..','..','..'],
   "a" => ['O.','..','..'],
@@ -41,32 +52,32 @@ lowercase_alphabet = {
   "y" => ["OO",".O","OO"],
   "z" => ["O.",".O","OO"]
                             }
-# end
 
-["c", "a", "t"].each do |letter|
-  lowercase_alphabet.each do |key, value|
-    if letter == key
-      print lowercase_alphabet[key][0]
-    end
 
-  end
-end
 
-["c", "a", "t"].each do |letter|
-  lowercase_alphabet.each do |key, value|
-    if letter == key
-      puts lowercase_alphabet[key][1]
+  ["c", "a", "t"].each do |letter|
+    lowercase_alphabet.each do |key, value|
+      if letter == key
+        print lowercase_alphabet[key][0]
+      end
     end
   end
-end
 
-["c", "a", "t"].each do |letter|
-  lowercase_alphabet.each do |key, value|
-    if letter == key
-       lowercase_alphabet[key][2]
+  ["c", "a", "t"].each do |letter|
+    lowercase_alphabet.each do |key, value|
+      if letter == key
+        print lowercase_alphabet[key][1]
+      end
     end
   end
-end
+
+  ["c", "a", "t"].each do |letter|
+    lowercase_alphabet.each do |key, value|
+      if letter == key
+         print lowercase_alphabet[key][2]
+      end
+    end
+  end
 
 
 # puts lowercase_alphabet['a'][0] + lowercase_alphabet[" "][0]
