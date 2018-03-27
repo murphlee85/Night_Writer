@@ -1,4 +1,5 @@
-require 'pry'
+class NightWriter
+end 
 
 
 #iterate through text
