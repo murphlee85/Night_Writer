@@ -22,7 +22,6 @@ require 'pry'
 # return line"
 
 
-
 lowercase_alphabet = {
   " " => ['..','..','..'],
   "a" => ['O.','..','..'],
@@ -53,8 +52,6 @@ lowercase_alphabet = {
   "z" => ["O.",".O","OO"]
                             }
 
-
-
   ["c", "a", "t"].each do |letter|
     lowercase_alphabet.each do |key, value|
       if letter == key
@@ -78,12 +75,3 @@ lowercase_alphabet = {
       end
     end
   end
-
-
-# puts lowercase_alphabet['a'][0] + lowercase_alphabet[" "][0]
-# puts lowercase_alphabet['a'][1] + lowercase_alphabet[" "][1]
-# puts lowercase_alphabet['a'][2] + lowercase_alphabet[" "][2]
-
-# input = "cat"
-# input = input.chars
-# p input
