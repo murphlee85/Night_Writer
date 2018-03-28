@@ -1,5 +1,5 @@
 class NightWriter
-end 
+end
 
 
 #iterate through text
@@ -53,26 +53,8 @@ lowercase_alphabet = {
   "z" => ["O.",".O","OO"]
                             }
 
-  ["c", "a", "t"].each do |letter|
-    lowercase_alphabet.each do |key, value|
-      if letter == key
-        print lowercase_alphabet[key][0]
-      end
-    end
-  end
 
-  ["c", "a", "t"].each do |letter|
-    lowercase_alphabet.each do |key, value|
-      if letter == key
-        print lowercase_alphabet[key][1]
-      end
-    end
-  end
-
-  ["c", "a", "t"].each do |letter|
-    lowercase_alphabet.each do |key, value|
-      if letter == key
-         print lowercase_alphabet[key][2]
-      end
-    end
-  end
+braille_characters = []
+["c", "a", "t"].each do |letter|
+  braille_characters.push(lowercase_alphabet[letter])
+end
