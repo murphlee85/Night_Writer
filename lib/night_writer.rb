@@ -34,6 +34,7 @@ class NightWriter
       braille_to_english = ""
       message.split("\n")
     until split == ["","",""]
+      rows 
+    end
   end
-
 end
