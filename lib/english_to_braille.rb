@@ -1,26 +1,19 @@
+require 'pry'
+
 class NightWriter
+  attr_reader :message
+
+  def initialize
+    @message = "this is a test"
+  end
+
 end
 
 
 #iterate through text
-
 #break it into 80 character segments including spaces
-
-
-
 # take english string
-
 # change it to characters
-
-
-
-# iterate through characters
-# print first array
-# return line
-# print second array
-# return line
-# print third array
-# return line"
 
 
 lowercase_alphabet = {
@@ -54,7 +47,19 @@ lowercase_alphabet = {
                             }
 
 
+# Working on putting this into a method(s)
+message = "this is a test".downcase.chars
+#binding.pry
+
 braille_characters = []
-["c", "a", "t"].each do |letter|
+message.each do |letter|
   braille_characters.push(lowercase_alphabet[letter])
 end
+
+[0,1,2].each do |index|
+  braille_characters.each do |braille_character|
+    print braille_character[index]
+  end
+  puts
+end
+#binding.pry
