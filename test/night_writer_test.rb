@@ -2,6 +2,7 @@ require 'minitest/autorun'
 require 'minitest/pride'
 require './lib/english_to_braille'
 require './lib/night_writer'
+require 'pry'
 
 
 class NightWriterTest < Minitest::Test
@@ -55,8 +56,10 @@ class NightWriterTest < Minitest::Test
 
   def test_braille_to_english
     night_writer = NightWriter.new
-
-    assert_equal 'a', night_writer.english_to_braille("O.\n..\n..")
+    expected = night_writer.english_to_braille('a')
+    given = "O.\n..\n.."
+    
+    assert_equal expected, given
   end
 
 
