@@ -31,6 +31,7 @@ module EnglishToBraille
   "x" => "OO\n..\nOO\n",
   "y" => "OO\n.O\nOO\n",
   "z" => "O.\n.O\nOO"
+  "capital" => "..\n..\n.O"
   }
   end
 end
